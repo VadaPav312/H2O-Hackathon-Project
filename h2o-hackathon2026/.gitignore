@@ -1,0 +1,70 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Capacitor / Xcode build artifacts + Expo native backups (post-migration)
+ios.expo-backup/
+android.expo-backup/
+DerivedData/
+*.xcuserstate
+
+# Claude Code (local user settings)
+.claude/settings.local.json
+
+# Plan
+plan.md
+
+# Hackathon raw dataset (embedded into App.tsx as WATER_HISTORY)
+challenge_data.json
+.vercel
+
+# Local Claude memory/state
+.claude/
+
+# CDEC reservoir conditions PDFs (downloaded snapshots — large; data is
+# baked into data/cdec.json instead).
+rescond_*.pdf
+
+# Local debug screenshots
+screen-capture*.png
+
+.vercel
+.env*.local

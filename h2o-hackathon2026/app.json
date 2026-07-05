@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "jsEngine": "hermes",
+    "name": "h2otoyou",
+    "slug": "h2ohack2026",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "updates": {
+      "enabled": false,
+      "checkAutomatically": "NEVER"
+    },
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "H2O Watch needs camera access to scan water test strips, identify pollution, and detect items for water-footprint analysis.",
+        "NSPhotoLibraryUsageDescription": "H2O Watch needs photo library access to analyze images of test strips, pollution, and items.",
+        "NSPhotoLibraryAddUsageDescription": "H2O Watch may save annotated analysis results to your photos.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.flowstate.h2otoyou",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.flowstate.h2otoyou",
+      "googleServicesFile": "./google-services.json"
+    },
+    "plugins": [
+      "expo-dev-client",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "H2O Watch accesses your photos to analyze water test strips, pollution samples, and items for water-footprint estimates.",
+          "cameraPermission": "H2O Watch uses your camera to scan water test strips, pollution, and items.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-font",
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.651494317419-3k9fb93vnbbic1ihgrfvv0f2gul70mtv"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b8281a7-a192-4f0e-8791-48f9cbb42851"
+      }
+    },
+    "owner": "flow_state"
+  }
+}
